@@ -3,6 +3,8 @@
   [projects.default]
   contents = [
     "about",
+    "what-is-sciml",
+    "optimizing-serial-code",
     "appendix",
     "references",
   ]
@@ -16,4 +18,4 @@
   # Port used by serve()
   port = 8004
 
-  output_filename = "booktemplate"
+  output_filename = "SciML_Book"

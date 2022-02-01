@@ -1,4 +1,4 @@
-module BookTemplate
+module BookTest
 
 using Reexport: @reexport
 @reexport begin
@@ -13,8 +13,15 @@ using DataFrames:
     select
 end # @reexport
 
+using BenchmarkTools
+using StaticArrays
+
 include("data.jl")
+include("optimizing-serial-code.jl")
+
 export example_dataframe
+export inner_rows!
+export inner_cols!
 
 """
     build()
